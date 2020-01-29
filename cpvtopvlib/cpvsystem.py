@@ -379,6 +379,16 @@ class CPVSystem(object):
               + np.multiply(dni_uf, dni_weight))
 
         return uf
+    
+    def getIndicenceAngleModifier(self, aoi)
+           """
+        Retrieves incidence angle modifier as defined in PVSYST
+        Parameters
+        ----------
+        aoi : angle of incidence
+            """
+        iam = 1 #model to be introduced
+        return iam
 
     def localize(self, location=None, latitude=None, longitude=None,
                  **kwargs):
