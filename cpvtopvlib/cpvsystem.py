@@ -379,6 +379,22 @@ class CPVSystem(object):
               + np.multiply(dni_uf, dni_weight))
 
         return uf
+    
+    def get_incidence_angle_modifier(self, aoi)
+            """
+        Creates the Incidence Angle Modifier, as defined in PVSYST 
+        https://www.pvsyst.com/help/iam_loss.htm
+
+        Parameters
+        ----------
+        aoi: angle of incidence
+
+        Returns
+        -------
+        iam : losses calculated for the Incidence Angle Modifier
+        """
+        iam=1 #model to be added https://www.pvsyst.com/help/iam_loss.htm
+        return iam
 
     def localize(self, location=None, latitude=None, longitude=None,
                  **kwargs):
